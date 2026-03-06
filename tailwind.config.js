@@ -20,10 +20,24 @@ export default {
           secondary: '#a3a3a3',
           muted: '#6b6b6b',
         },
+        green: {
+          DEFAULT: '#22c55e',
+          dim: '#166534',
+        },
       },
       fontFamily: {
         sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+      },
+      animation: {
+        'ticker': 'ticker 60s linear infinite',
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
+      },
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
     },
   },

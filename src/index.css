@@ -33,3 +33,18 @@
     text-wrap: pretty;
   }
 }
+
+/* Ticker animation */
+.ticker-track {
+  display: flex;
+  width: max-content;
+}
+
+/* Hide scrollbar for ticker */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
