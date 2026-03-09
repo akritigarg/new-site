@@ -499,7 +499,7 @@ function CaseStudies() {
   const [expanded, setExpanded] = useState<number | null>(null)
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+    <section id="case-studies" className="max-w-6xl mx-auto px-6 py-24 md:py-32">
       <FadeUp>
         <div className="text-center mb-16">
           <h2 className="text-sm font-mono text-danger tracking-wider uppercase mb-4">Recent scan logs</h2>
