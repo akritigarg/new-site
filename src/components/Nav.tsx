@@ -17,6 +17,9 @@ export function Nav() {
           </span>
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm text-text-secondary">
+          <a href={`${prefix}#case-studies`} className="hover:text-text-primary transition-colors">
+            Case Studies
+          </a>
           <a href={`${prefix}#how`} className="hover:text-text-primary transition-colors">
             How It Works
           </a>
@@ -48,6 +51,9 @@ export function Nav() {
       {mobileOpen && (
         <div className="md:hidden border-t border-surface-border/60 bg-surface/95 backdrop-blur-xl">
           <div className="px-6 py-4 flex flex-col gap-4 text-sm text-text-secondary">
+            <a href={`${prefix}#case-studies`} onClick={() => setMobileOpen(false)} className="hover:text-text-primary transition-colors">
+              Case Studies
+            </a>
             <a href={`${prefix}#how`} onClick={() => setMobileOpen(false)} className="hover:text-text-primary transition-colors">
               How It Works
             </a>
